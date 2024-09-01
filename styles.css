@@ -1,28 +1,54 @@
-/* styles.css */
-body {
-    /* Set a gradient background from purple to teal */
-    background: linear-gradient(to right, #6a3093, #a044ff, #5f2c82, #49a09d);
-    font-family: Arial, sans-serif;
-    /* Sets a clean, modern font for the body text */
-    color: white;
-    /* Sets the text color to white for better contrast */
+/* Basic reset for margins and padding */
+body, h1, a {
     margin: 0;
-    /* Removes default margin */
     padding: 0;
-    /* Removes default padding */
-    display: flex;
-    /* Enables flexbox layout */
-    justify-content: center;
-    /* Centers content horizontally */
-    align-items: center;
-    /* Centers content vertically */
-    height: 100vh;
-    /* Makes the body take the full height of the viewport */
 }
 
+/* Set body to use flexbox for centering content */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a3093, #a044ff, #5f2c82, #49a09d);
+    background-color: #3c3a3d; /* Light background color */
+}
+
+
+/* Container for image and text */
+.container {
+    text-align: center; /* Center the content inside the container */
+    background-color: #39e2470c; /* White background for the container */
+    padding: 20px; /* Add padding around content */
+    border-radius: 8px; /* Rounded corners for a soft look */
+    box-shadow: 0 4px 8px rgba(110, 224, 65, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style the image */
+img {
+    max-width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+/* Style the heading */
 h1 {
-    font-size: 2em;
-    /* Sets the size of the header text */
-    text-align: center;
-    /* Centers the header text */
+    font-size: 24px; /* Adjust font size as needed */
+    color: #7eb43f; /* Darker color for text */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Style for links */
+a {
+    display: block;
+    margin: 10px 0;
+    color: #48db4f; /* Teal color for links */
+    text-decoration:underline;
+    font-size: 18px; /* Font size for links */
+}
+
+a:hover {
+    text-decoration:underline; /* Underline on hover */
 }
